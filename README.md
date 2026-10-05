@@ -12,7 +12,7 @@ Upon detecting an abnormality: Send 0x01 to PLC register D1 (rotating signal lig
 Upon returning to normal: Send 0x02 to PLC register D2 (rotating signal light stops).
 
 
-Transmission Data Format
+Transmission Data Format Specifications↓
 
 Common Section (Sub-header to Sub-command)
 
