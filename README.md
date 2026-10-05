@@ -34,7 +34,7 @@ When an abnormality is detected
 Start Device: 0x01, 0x00, 0x00 (Corresponds to PLC register D1) , 
 Device Code: 0xA8, 
 Number of Devices: 0x01, 0x00, 
-Main Data: 0x01, 0x00, 
+Main Data: 0x01, 0x00
 
 Upon recovery to normal status
 
@@ -42,4 +42,13 @@ Start Device: 0x02, 0x00, 0x00 (Corresponds to PLC register D2) ,
 Device Code: 0xA8, 
 Number of Devices: 0x01, 0x00, 
 Main Data: 0x02, 0x00
+
+Method for monitoring the rotating light status↓
+Since the PLC cannot automatically transmit the rotating light status, the connected device reads the value from the PLC register that stores this status.
+It returns 0x01 when the rotating light is operating and 0x02 when it is stopped.
+
+Transmission data format (for rotating light status check)↓
+Sub-header: 0x50, 0x00, Network No: 0x00, Destination Station No: 0xFF, I/O No: 0xFF, 0x03, Destination Multidrop Station No: 0x00, Data Length: 0x0C, 0x00, Watchdog Timer: 0x00, 0x00, Command: 0x01, 0x04, Sub-command: 0x00, 0x00, Start Device: 0x03, 0x00, 0x00, Device Code: 0xA8, Number of Devices: 0x01, 0x00
+
+The commands have become "0x01, 0x04" and the Main Data for transmission is missing.
 
