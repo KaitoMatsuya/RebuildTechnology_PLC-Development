@@ -31,14 +31,14 @@ Variable Section (Start Device to Main Data)
 
 When an abnormality is detected
 
-Start Device: 0x01, 0x00, 0x00(Corresponds to PLC register D1.), 
+Start Device: 0x01, 0x00, 0x00 (Corresponds to PLC register D1) , 
 Device Code: 0xA8, 
 Number of Devices: 0x01, 0x00, 
 Main Data: 0x01, 0x00, 
 
 Upon recovery to normal status
 
-Start Device: 0x02, 0x00, 0x00(Corresponds to PLC register D2.), 
+Start Device: 0x02, 0x00, 0x00 (Corresponds to PLC register D2) , 
 Device Code: 0xA8, 
 Number of Devices: 0x01, 0x00, 
 Main Data: 0x02, 0x00
