@@ -44,6 +44,7 @@ Number of Devices: 0x01, 0x00,
 Main Data: 0x02, 0x00
 
 Method for monitoring the rotating light status↓
+
 Since the PLC cannot automatically transmit the rotating light status, the connected device reads the value from the PLC register that stores this status.
 It returns 0x01 when the rotating light is operating and 0x02 when it is stopped.
 
