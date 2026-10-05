@@ -27,7 +27,7 @@ Watchdog Timer: 0x00, 0x00,
 Command: 0x01, 0x14, 
 Sub-command: 0x00, 0x00
 
-Variable Section (Start Device)
+Variable Section (Start Device to Main Data)
 
 When an abnormality is detected
 
