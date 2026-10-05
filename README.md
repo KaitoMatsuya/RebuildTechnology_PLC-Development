@@ -6,12 +6,15 @@ About SLMP Ethernet Protocol(3E Frame)↓
 3. https://qiita.com/inari1047/items/f01f632989d5f5c51a11
 
 Planned communication specifications:
-・Upon detecting an abnormality: Send 0x01 to PLC register D1 (rotating signal light activates).
-・Upon returning to normal: Send 0x02 to PLC register D2 (rotating signal light stops).
+
+Upon detecting an abnormality: Send 0x01 to PLC register D1 (rotating signal light activates).
+
+Upon returning to normal: Send 0x02 to PLC register D2 (rotating signal light stops).
 
 Transmission Data Format
 
 Common Section (Sub-header to Sub-command)
+
 Sub-header: 0x50, 0x00
 Network No.: 0x00
 Destination Station No.: 0xFF
@@ -24,8 +27,10 @@ Command: 0x01, 0x14
 Sub-command: 0x00, 0x00
 
 Variable Section (Start Device)
+
 When an abnormality is detected
 Start Device
+
 Abnormality: 0x01, 0x00, 0x00
 Device Code: 0xA8
 Number of Devices: 0x01, 0x00
@@ -33,6 +38,7 @@ Main Data: 0x01, 0x00
 
 Upon recovery to normal status
 Start Device
+
 Abnormality: 0x02, 0x00, 0x00
 Device Code: 0xA8
 Number of Devices: 0x01, 0x00
