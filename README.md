@@ -5,7 +5,7 @@ About SLMP Ethernet Protocol(3E Frame)↓
 2. https://qiita.com/hidehito108/items/e8eca75a46ee7d59feed
 3. https://qiita.com/inari1047/items/f01f632989d5f5c51a11
 
-Planned communication specifications:
+Planned communication specifications↓
 
 Upon detecting an abnormality: Send 0x01 to PLC register D1 (rotating signal light activates).
 
