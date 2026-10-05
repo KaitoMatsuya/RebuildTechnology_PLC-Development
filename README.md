@@ -11,6 +11,7 @@ Upon detecting an abnormality: Send 0x01 to PLC register D1 (rotating signal lig
 
 Upon returning to normal: Send 0x02 to PLC register D2 (rotating signal light stops).
 
+PLC IP Address → 192.168.3.250, PLC Port No → 5000
 
 Transmission Data Format Specifications↓
 
