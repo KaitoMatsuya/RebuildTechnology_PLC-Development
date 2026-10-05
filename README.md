@@ -6,5 +6,5 @@ About SLMP Ethernet Protocol↓
 3. https://qiita.com/inari1047/items/f01f632989d5f5c51a11
 
 Planned communication specifications:
-Upon detecting an anomaly: Send 0x01 to D1 (rotating signal light activates).
-Upon returning to normal: Send 0x01 to D2 (rotating signal light stops).
+Upon detecting an anomaly: Send 0x01 to PLC register D1 (rotating signal light activates).
+Upon returning to normal: Send 0x01 to PLC register D2 (rotating signal light stops).
